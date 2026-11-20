@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bengal Grocery Trading | Better Grocery, Better Life</title>
+<meta name="description" content="Bengal Grocery Trading — grocery distribution, promotions, and 3NOT3 Premium brand.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#0b2058;background:#f5f9ff}
+:root{--navy:#061b55;--blue:#0b83e6;--gold:#f4c52c}
+header{background:linear-gradient(120deg,#061b55,#087cda);color:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-weight:900;font-size:20px;letter-spacing:.5px}.brand small{display:block;color:#ffe35c;font-size:12px;letter-spacing:2px}
+nav a{color:#fff;text-decoration:none;font-weight:bold;margin:0 10px}
+.hero{padding:60px 5%;text-align:center;background:linear-gradient(135deg,#e5f4ff,#fff8d9);position:relative;overflow:hidden}
+.hero h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:8px auto;max-width:900px;color:var(--navy)}
+.hero p{font-size:20px;margin:16px auto;color:#31446e}
+.pill{display:inline-block;background:#fff;border:2px solid var(--gold);border-radius:999px;padding:9px 17px;font-weight:bold;color:#0b2058}
+.btn{display:inline-block;margin:12px 6px;padding:13px 22px;border-radius:12px;background:var(--navy);color:white;text-decoration:none;font-weight:bold}
+.btn.gold{background:var(--gold);color:var(--navy)}
+section{padding:42px 5%;max-width:1120px;margin:auto}
+h2{text-align:center;font-size:30px;margin:0 0 25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:white;border-radius:18px;padding:24px;border:1px solid #dbe6f5;box-shadow:0 7px 22px #0b20580b}
+.card h3{margin-top:0}.card p{line-height:1.6;color:#415170}
+.verifybox{max-width:650px;margin:auto;text-align:center;background:white;border:2px solid var(--gold);padding:28px;border-radius:20px}
+input{width:min(100%,430px);padding:14px;border-radius:10px;border:1px solid #9db2d4;font-size:16px}
+footer{background:var(--navy);color:white;padding:26px 5%;text-align:center}
+footer a{color:#ffe35c}
+</style></head>
+<body>
+<header><div class="brand">BENGAL GROCERY TRADING<small>BETTER GROCERY • BETTER LIFE</small></div>
+<nav><a href="#about">About</a><a href="#brands">Brands</a><a href="#verify">Verify</a></nav></header>
+<div class="hero"><span class="pill">GROCERY • DISTRIBUTION • PROMOTIONS</span>
+<h1>Better Grocery<br>Better Life</h1>
+<p>Reliable grocery trading and promotional offers from Bengal Grocery Trading.</p>
+<a class="btn gold" href="#verify">Verify a Design</a><a class="btn" href="#brands">Explore 3NOT3 Premium</a></div>
+<section id="about"><h2>About Bengal Grocery Trading</h2><div class="card"><p style="text-align:center">Bengal Grocery Trading works in grocery trade and promotional campaigns. This website provides a public place to identify official brand information and check campaign design records.</p></div></section>
+<section id="brands"><h2>Our Brand</h2><div class="grid"><div class="card"><h3>🏆 3NOT3 PREMIUM</h3><p>Brand identity and promotional campaign label used in Bengal Grocery Trading campaign artwork.</p></div><div class="card"><h3>🛒 Grocery Promotions</h3><p>Retailer and wholesaler promotional offers. Please confirm campaign terms with the issuing business before redeeming.</p></div></div></section>
+<section id="verify"><h2>Design Verification</h2><div class="verifybox"><p>Enter the design ID printed on the campaign artwork to check its record.</p><input id="designId" value="BGT-3N3-2026-001" aria-label="Design ID"><br><a class="btn gold" id="verifyBtn" href="verify/index.html">Verify Design</a><p style="font-size:13px;color:#596784">This site verifies the published design record only. It does not certify a registered trademark or legal copyright ownership.</p></div></section>
+<footer><b>BENGAL GROCERY TRADING</b><br>Better Grocery, Better Life<br><small>Website record for campaign information and design verification.</small></footer>
+<script>
+const field=document.getElementById('designId'), btn=document.getElementById('verifyBtn');
+field.addEventListener('input',()=>{btn.href='verify/index.html?id='+encodeURIComponent(field.value.trim())});
+</script>
+</body></html>
